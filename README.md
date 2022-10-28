@@ -5,6 +5,7 @@
 - SASS(SCSS) and CSS custom properties
 - Flexbox
 - CSS Grid
+- Java Script
 
 
 ### Useful resources
