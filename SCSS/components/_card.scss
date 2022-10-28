@@ -1,0 +1,127 @@
+@use '../utilities' as u;
+
+.card {
+
+    --gap: 1.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    background-color: var(--clr-blue);
+    border-radius: 5%;
+  
+    padding: 1.1em;
+    padding-bottom: 2em;
+
+    width: u.pxToRem(300px); 
+
+    @include u.breakpoint-up(small) {
+        width: u.pxToRem(330px);  
+    }
+
+    @include u.breakpoint-up(medium) {
+        width: u.pxToRem(370px);  
+        padding: 1.5em;
+        padding-bottom: 2em;
+    }
+
+    &__header {
+
+        border-radius: 50%;
+        background-color: var(--clr-buttons);
+        padding: .6em;
+
+        img {
+            width: u.pxToRem(17px);
+        }
+        
+    }
+
+    &__body {
+
+        &__text {
+            & > *:first-child {
+                margin-bottom: 1rem;
+            }
+
+            & > *:last-child {
+                color: var(--clr-grey);
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        &__btn {
+
+            justify-content: center;
+            align-items: center;
+
+            @include u.breakpoint-up(medium) {
+                justify-content: space-between;
+            }
+            
+
+            .btn_rating {
+
+                font-family: inherit;
+                border-radius: 50%;
+                border: none;
+                color: var(--clr-grey);
+                background-color: var(--clr-buttons);
+               
+                width: u.pxToRem(35px);
+                aspect-ratio: 1;
+
+                @include u.breakpoint-up(small) {
+                    width: u.pxToRem(40px);
+                }
+
+                &:hover {
+                    color: var(--clr-white);
+                    background-color: var(--clr-light-grey);
+                    cursor: pointer;
+
+                    &:last-child {
+                        background-color: var(--clr-orange);
+                    }
+                }
+                &.active {
+                    background-color: var(--clr-light-grey);
+                    color: var(--clr-white);
+                    
+                }
+            }
+            
+        }
+    }
+
+    &__footer {
+        
+       align-self: center;
+       justify-self: center;
+       
+        .submit {
+            padding: .8em 8em;
+            border-radius: u.pxToRem(40px);
+            background-color: var(--clr-orange);
+            border: none;
+            color: var(--clr-white);
+           
+            font-family: inherit;
+            letter-spacing: u.pxToRem(2px);
+            
+            @include u.breakpoint-up(medium) {
+                padding-inline: 10em;;
+            }
+
+            @include u.breakpoint-up(large) {
+                &:hover {
+                    background-color: var(--clr-white);
+                    color: var(--clr-orange);
+                    font-weight: 700;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+}
