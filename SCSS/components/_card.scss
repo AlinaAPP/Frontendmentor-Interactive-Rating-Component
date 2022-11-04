@@ -37,61 +37,60 @@
         
     }
 
-    &__body {
 
-        &__text {
-            & > *:first-child {
-                margin-bottom: 1rem;
-            }
 
-            & > *:last-child {
-                color: var(--clr-grey);
-                margin-bottom: 1.5rem;
-            }
+    &__text {
+        & > *:first-child {
+            margin-bottom: 1rem;
         }
 
-        &__btn {
-
-            justify-content: center;
-            align-items: center;
-
-            @include u.breakpoint-up(medium) {
-                justify-content: space-between;
-            }
-            
-
-            .btn_rating {
-
-                font-family: inherit;
-                border-radius: 50%;
-                border: none;
-                color: var(--clr-grey);
-                background-color: var(--clr-buttons);
-               
-                width: u.pxToRem(35px);
-                aspect-ratio: 1;
-
-                @include u.breakpoint-up(small) {
-                    width: u.pxToRem(40px);
-                }
-
-                &:hover {
-                    color: var(--clr-white);
-                    background-color: var(--clr-light-grey);
-                    cursor: pointer;
-
-                    &:last-child {
-                        background-color: var(--clr-orange);
-                    }
-                }
-                &.active {
-                    background-color: var(--clr-light-grey);
-                    color: var(--clr-white);
-                    
-                }
-            }
-            
+        & > *:last-child {
+            color: var(--clr-grey);
+            margin-bottom: 1.5rem;
         }
+    }
+
+    &__btn {
+
+        justify-content: center;
+        align-items: center;
+
+        @include u.breakpoint-up(medium) {
+            justify-content: space-between;
+        }
+        
+
+        .btn_rating {
+
+            font-family: inherit;
+            border-radius: 50%;
+            border: none;
+            color: var(--clr-grey);
+            background-color: var(--clr-buttons);
+            
+            width: u.pxToRem(35px);
+            aspect-ratio: 1;
+
+            @include u.breakpoint-up(small) {
+                width: u.pxToRem(40px);
+            }
+
+            &:hover {
+                color: var(--clr-white);
+                background-color: var(--clr-light-grey);
+                cursor: pointer;
+
+                &:last-child {
+                    background-color: var(--clr-orange);
+                }
+            }
+            &.active {
+                background-color: var(--clr-light-grey);
+                color: var(--clr-white);
+                
+            }
+        }
+        
     }
 
     &__footer {
