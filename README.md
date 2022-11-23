@@ -1,5 +1,5 @@
 ### Link
-[Live Site URL]: https://alinaapp.github.io/Frontendmentor-Interactive-Rating-Component/
+Live Site URL: https://alinaapp.github.io/Frontendmentor-Interactive-Rating-Component/
 ### Built with
 
 - Semantic HTML5 markup
