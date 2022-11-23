@@ -1,6 +1,6 @@
-@use '../utilities' as u;
+@use "../utilities" as u;
 
 .flex {
-    display: flex;
-    gap: var(--gap, 1rem);
+  display: flex;
+  gap: var(--gap, 1rem);
 }
